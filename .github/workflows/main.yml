@@ -1,0 +1,31 @@
+
+name: Build code for windows
+
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyinstaller
+    - name: Compile code
+      run: |
+        .\COMPILE.bat
+    - name: Push compiled code to repo
+      run: |
+        git config user.email "59889074+MangoCoder360@users.noreply.github.com"
+        git config user.name "GitHub Actions"
+        git add *
+        git commit -m "Compiled code"
+        git push
