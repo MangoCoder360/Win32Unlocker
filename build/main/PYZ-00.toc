@@ -662,9 +662,9 @@
   ('tracemalloc',
    'c:\\hostedtoolcache\\windows\\python\\3.8.10\\x64\\lib\\tracemalloc.py',
    'PYMODULE'),
-  ('stringprep',
-   'c:\\hostedtoolcache\\windows\\python\\3.8.10\\x64\\lib\\stringprep.py',
-   'PYMODULE'),
   ('_py_abc',
    'c:\\hostedtoolcache\\windows\\python\\3.8.10\\x64\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('stringprep',
+   'c:\\hostedtoolcache\\windows\\python\\3.8.10\\x64\\lib\\stringprep.py',
    'PYMODULE')])
