@@ -1,4 +1,4 @@
-from time import sleep
+import time
 print("Made in Python by MangoCoder360!")
 print("WIN32 UNLOCKER - LOADING...")
-sleep(5)
+time.sleep(5)
